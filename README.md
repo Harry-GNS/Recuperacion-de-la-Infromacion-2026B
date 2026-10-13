@@ -1,43 +1,61 @@
 # Recuperación de la Información 2026-B
 
-Este repositorio será mi espacio de trabajo para la materia de Recuperación de la Información durante el semestre 2026-B.
+Repositorio de trabajo para la materia de Recuperación de la Información durante el semestre 2026-B.
 
-Aquí guardaré:
+Aquí se almacenan apuntes, tareas, notebooks, datasets y material adicional relacionado con la asignatura.
 
-- Mis apuntes de clase
-- Tareas y deberes
-- Notebooks con ejercicios y análisis
-- Datos y datasets utilizados en las actividades
-- Presentaciones o diapositivas de clase
-- Material adicional relacionado con la asignatura
+## Contenido actual
 
-## Estructura del repositorio
+### Revisión de Machine Learning
+
+El notebook [Notebooks/01_revml.ipynb](Notebooks/01_revml.ipynb) contiene una revisión práctica de fundamentos de Machine Learning utilizando el dataset Iris. El primer módulo incluye:
+
+- Descripción de las instancias y características.
+- Exploración de las clases del dataset.
+- Tabla con ejemplos de flores.
+- Gráfico de distribución de clases.
+- Predicción inicial e interpretación de resultados.
+
+## Estructura de carpetas
 
 ```text
 .
-├── notebooks/
-│   ├── 01_...
-│   ├── 02_...
-│   ├── ...
-│
+├── Notebooks/
+│   └── 01_revml.ipynb
 ├── data/
-│   ├── datasets utilizados en las actividades
-│   └── archivos auxiliares
-│
 ├── slides/
-│   └── diapositivas de las clases
-│
+├── .gitignore
+├── LICENSE
 └── README.md
 ```
 
 ## Descripción de carpetas
 
-- `notebooks/`: aquí guardaré cuadernos de trabajo, análisis, ejercicios y experimentos relacionados con la materia.
-- `data/`: aquí almacenaré los datasets, archivos auxiliares y recursos de entrada usados en actividades.
-- `slides/`: aquí dejaré las diapositivas o materiales visuales de las clases.
+- `Notebooks/`: cuadernos de trabajo, análisis, ejercicios y experimentos.
+- `data/`: datasets, archivos auxiliares y recursos de entrada.
+- `slides/`: diapositivas y materiales visuales de la clase.
+
+## Ejecución de los notebooks
+
+1. Instala Python 3 y Jupyter.
+2. Instala las dependencias necesarias:
+
+   ```bash
+   pip install jupyter pandas matplotlib scikit-learn
+   ```
+
+3. Abre el notebook desde VS Code o Jupyter:
+
+   ```bash
+   jupyter notebook Notebooks/01_revml.ipynb
+   ```
+
+4. Selecciona un kernel de Python y ejecuta las celdas en orden.
 
 ## Objetivo
 
-El objetivo de este repositorio es mantener organizada toda la información de la asignatura para facilitar el estudio, la revisión de contenido y la entrega de trabajos.
+El objetivo es mantener organizada la información de la asignatura para facilitar el estudio, la revisión de contenidos y la entrega de trabajos.
 
-> Este repositorio es un espacio personal para apuntes, deberes y material académico de Recuperación de la Información.
+## Licencia
+
+Este proyecto está disponible bajo la licencia [MIT](LICENSE).
