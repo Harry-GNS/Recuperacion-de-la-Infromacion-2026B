@@ -34,14 +34,14 @@ def preprocesar(texto):
     ]
 
 
-corpus_archivos = list(CORPUS_DIR.glob("*.parquet"))
+corpus_archivos = list(CORPUS_DIR.glob("*.csv"))
 if len(corpus_archivos) != 1:
     raise RuntimeError(
-        f"Se esperaba un único Parquet en {CORPUS_DIR}; "
+        f"Se esperaba un único CSV en {CORPUS_DIR}; "
         f"se encontraron {len(corpus_archivos)}."
     )
 
-corpus = pd.read_parquet(corpus_archivos[0])
+corpus = pd.read_csv(corpus_archivos[0], encoding="utf-8")
 faltantes = {"_id", "title", "text"}.difference(corpus.columns)
 if faltantes:
     raise RuntimeError(f"Faltan columnas del corpus: {sorted(faltantes)}")

@@ -3,5 +3,5 @@ services:
     name: nfcorpus-guajan
     runtime: python
     rootDir: EXAMENRI2BTAS
-    buildCommand: pip install -r requirements.txt && python -c "import nltk; nltk.download('stopwords')"
+    buildCommand: pip install -r requirements.txt
     startCommand: gunicorn app:app
