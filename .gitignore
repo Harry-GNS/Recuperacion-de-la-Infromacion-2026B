@@ -30,7 +30,6 @@ htmlcov/
 # Datos y archivos generados localmente
 *.tmp
 *.log
-*.csv
 *.parquet
 
 # Sistema operativo y editores
