@@ -146,6 +146,17 @@ def buscar_bm25(query, top_k=10, k1=1.2, b=0.75):
 app = Flask(__name__)
 
 
+@app.get("/")
+def index():
+    return jsonify({
+        "service": "NFCorpus Information Retrieval API",
+        "status": "ok",
+        "health": "/health",
+        "search": "/search",
+        "message": "La ruta raiz describe la API. Use /health con GET y /search con POST.",
+    })
+
+
 @app.get("/health")
 def health():
     return jsonify({
